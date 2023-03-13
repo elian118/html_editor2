@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import Editor from 'ckeditor5-custom-build/build/ckeditor';
 // @ts-ignore
 import { CKEditor } from '@ckeditor/ckeditor5-react'
+// @ts-ignore
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 const MyCkEditor = () => {
   const [text, setText] = useState<string>('<p>안녕하세요! CKEditor 5 입니다!</p>');
@@ -10,7 +12,7 @@ const MyCkEditor = () => {
     <div className="App">
       <div className="min-w-sm">
         <CKEditor
-          editor={ Editor }
+          editor={ ClassicEditor }
           data={text}
           onReady={ (editor: any) => {
             // You can store the "editor" and use when it is needed.
