@@ -20,8 +20,13 @@
         max-width: 80%;
         margin: 20px auto;
     }
+    .buttonArea {
+        text-align: center;
+        margin: 10px;
+    }
 </style>
-<body>
+<body style="margin: 0;">
+<!--<body>-->
 <div id="container">
   <div id="editor">
   </div>
@@ -46,7 +51,7 @@
     // https://ckeditor.com/docs/ckeditor5/latest/features/toolbar/toolbar.html#extended-toolbar-configuration-format
     toolbar: {
       items: [
-        'exportPDF','exportWord', '|',
+        // 'exportPDF','exportWord', '|',
         'findAndReplace', 'selectAll', '|',
         'heading', '|',
         'bold', 'italic', 'strikethrough', 'underline', 'code', 'subscript', 'superscript', 'removeFormat', '|',
@@ -194,6 +199,7 @@
 
   // 에디터로부터 HTML 콘텐츠 가져오기
   function getContent() {
+    console.log(editor.getData());
     return editor.getData();
   }
 
@@ -216,5 +222,9 @@
   });
 
 </script>
+<!--<div class='buttonArea'>-->
+<!--  <button onclick='getContent()'>코드 보기</button>-->
+<!--  <button>미리 보기</button>-->
+<!--</div>-->
 </body>
 </html>
