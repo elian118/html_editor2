@@ -26,7 +26,7 @@ class _CkeditorWebViewXScreenState extends State<CkeditorWebViewXScreen> {
         child: SizedBox(
           width: MediaQuery.of(context).size.width,
           child: WebViewX(
-            initialContent: 'http://localhost:5174/',
+            initialContent: 'http://localhost:5173',
             initialSourceType: SourceType.url,
             onWebViewCreated: (controller) => webViewXController = controller,
             width: MediaQuery.of(context).size.width,

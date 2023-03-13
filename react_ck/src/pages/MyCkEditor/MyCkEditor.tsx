@@ -1,16 +1,27 @@
 import React, { useState } from 'react';
 // @ts-ignore
-import Editor from 'ckeditor5-custom-build/build/ckeditor';
-// @ts-ignore
 import { CKEditor } from '@ckeditor/ckeditor5-react'
+import { Button } from '@material-tailwind/react';
+// @ts-ignore
+import ClassicExtended from "ckeditor5-build-classic-extended";
+import { editorConfig } from '@/pages/MyCkEditor/editorConfig';
 
 const MyCkEditor = () => {
   const [text, setText] = useState<string>('<p>안녕하세요! CKEditor 5 입니다!</p>');
+  const [isEdit, setIsEdit] = useState<boolean>(false);
   return (
     <div className="App">
       <div className="min-w-sm">
+        <div className="m-4">
+          <Button
+            onClick={() => setIsEdit(!isEdit)}
+          >
+            모드변경
+          </Button>
+        </div>
         <CKEditor
-          editor={ Editor }
+          editor={ ClassicExtended }
+          config={editorConfig}
           data={text}
           onReady={ (editor: any) => {
             // You can store the "editor" and use when it is needed.

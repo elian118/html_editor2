@@ -1,5 +1,5 @@
 import './App.css'
-import MyCkEditor from './components/MyCkEditor';
+import MyCkEditor from './pages/MyCkEditor/MyCkEditor';
 
 function App() {
   return (
