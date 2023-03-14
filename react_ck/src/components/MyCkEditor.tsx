@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 // @ts-ignore
-import Editor from 'ckeditor5-custom-build/build/ckeditor';
+import Editor from 'ckeditor5-custom-build/build/ckeditor'; // 커스덤 에디터
+// import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 // @ts-ignore
 import { CKEditor } from '@ckeditor/ckeditor5-react'
 
