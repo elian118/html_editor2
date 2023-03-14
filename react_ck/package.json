@@ -12,16 +12,17 @@
     "@ckeditor/ckeditor5-react": "^5.1.0",
     "@material-tailwind/react": "^1.4.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.9.0"
   },
   "devDependencies": {
-    "ckeditor5-custom-build": "file:ckeditor5-classic",
     "@rollup/plugin-dsv": "^3.0.2",
     "@types/node": "^18.15.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.14",
+    "ckeditor5-custom-build": "file:ckeditor5-classic",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7",
     "typescript": "^4.9.3",

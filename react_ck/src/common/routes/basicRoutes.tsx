@@ -1,7 +1,7 @@
-import { Home } from '@/pages/Home/Home';
 import React from 'react';
-import MyCkEditor from '@/pages/MyCkEditor/MyCkEditor';
-import NotFound from '@/pages/NotFound/NotFound';
+import { Home } from '@/pages/Home';
+import { MyCkEditor } from '@/pages/MyCkEditor';
+import { NotFound } from '@/pages/NotFound';
 
 export const basicRoutes = [
   {path: '/', element: <Home />},

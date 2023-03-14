@@ -4,7 +4,7 @@ import Editor from 'ckeditor5-custom-build/build/ckeditor';
 // @ts-ignore
 import { CKEditor } from '@ckeditor/ckeditor5-react'
 
-const MyCkEditor = () => {
+export const MyCkEditor = () => {
   const [text, setText] = useState<string>('<p>안녕하세요! CKEditor 5 입니다!</p>');
   return (
     <div className="App">
@@ -32,5 +32,3 @@ const MyCkEditor = () => {
     </div>
   );
 }
-
-export default MyCkEditor;

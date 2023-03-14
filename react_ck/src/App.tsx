@@ -1,11 +1,15 @@
-import './App.css'
-import MyCkEditor from './components/MyCkEditor';
+import './App.css';
+import { BrowserRouter } from 'react-router-dom';
+import { Router } from './common/routes/Router';
 
 function App() {
   return (
     <div className="App">
-      <MyCkEditor />
-    </div>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+    </div
+    >
   )
 }
 
